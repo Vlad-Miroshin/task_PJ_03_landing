@@ -111,6 +111,7 @@ body {
 }
 
 .hero-container {
+    margin-left: 134px;
     position: relative;
     z-index: 1;
 }
