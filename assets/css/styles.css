@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
+:root {
+    --font-family-main: "Nunito Sans", sans-serif;
+    --font-family-second: "Yeseva One", sans-serif;
+    
+    --font-size-main: 11px;
+
+    --color-theme: #E3B873;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    font-family: var(--font-family-main);
+}
+
+/* body * {
+    box-sizing: border-box;
+} */
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: black;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    font-size: 11px;
+}
+
+.header-content a {
+    color: var(--color-theme);
+}
+
+
+.logo {
+    color: var(--color-theme);
+    text-transform: uppercase;
+}
+
+.header-nav {
+    list-style: none;
+    display: flex;
+}
+
+.header-nav__item {
+    margin-right: 47px;
+    text-transform: uppercase;
+}
+
+.header-nav__item a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-nav__item a:hover {
+    color: var(--color-theme);
+}
+
+.button {
+    padding: 13px 33px;
+    background: var(--color-theme);    
+    box-shadow: 0 5px 15px 0 rgba(227, 184, 115, 0.2);
+    border-style: solid;
+    border-color: var(--color-theme);
+    border-width: 1px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-family: var(--font-family-main);
+    font-style: italic;
+    font-size: 11px;
+    color: white;
+}
+
+.button.transparent {
+    background: rgba(255, 255, 255, 0);    
+    border-color: white;
+    box-shadow: 0 0;
+}
+
+.hero {
+    background-image: url('../images/image_4_3.jpg');
+    background-size: auto;
+    height: 707px;
+    padding-top: 194px;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.hero-container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    max-width: 676px;
+    color: #FFFFFF;
+}
+
+.hero-title h1 {
+    margin: 0 0 19px;
+    font-family: var(--font-family-second);
+    font-size: 40px;
+    font-weight: 100;
+    line-height: 133%;
+    text-transform: uppercase;
+}
+
+.hero-title h3 {
+    margin: 0 0 19px;
+    font-family: var(--font-family-main);
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 164%;
+}
+
+.hero-title span {
+    color: var(--color-theme);
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px
+}
+
+
