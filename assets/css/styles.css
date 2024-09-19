@@ -121,21 +121,21 @@ body {
     color: #FFFFFF;
 }
 
-.hero-title h1 {
-    margin: 0 0 19px;
+.hero-title-header {
     font-family: var(--font-family-second);
     font-size: 40px;
     font-weight: 100;
     line-height: 133%;
     text-transform: uppercase;
+    margin: 0 0 19px;
 }
 
-.hero-title h3 {
-    margin: 0 0 19px;
+.hero-title-text {
     font-family: var(--font-family-main);
     font-size: 22px;
     font-weight: 100;
     line-height: 164%;
+    margin: 0 0 19px;
 }
 
 .hero-title span {
@@ -147,4 +147,105 @@ body {
     gap: 20px
 }
 
+
+.proj {
+    background-color: black;
+}
+
+.proj-container {
+    margin-left: 134px;
+    background-color: black;
+    color: white;
+    padding: 107px 0 414px 0;
+
+    display: flex;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.proj-descr {
+    max-width: 442px;
+}
+
+.proj-header {
+    font-family: var(--font-family-second);
+    font-size: 27px;
+    font-weight: 100;
+    line-height: 138%;
+    color: var(--color-theme);
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
+
+.proj-text {
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 190%;
+    margin-bottom: 42px;
+}
+
+.proj-params {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.proj-param {
+    margin-bottom: 34px;
+}
+
+.proj-param-name {
+    font-family: var(--font-family-second);
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 138%;
+    color: var(--color-theme);
+    text-transform: uppercase;
+    margin: 0 0 9px;
+}
+
+.proj-param-value {
+    font-family: var(--font-family-main);
+    font-size: 13px;
+    line-height: 163%;
+}
+
+.proj-slider {
+    max-width: 689px;
+}
+
+.proj-slider-image {
+    background-image: url('../images/image_2_1.jpg');
+    background-size: cover;
+    height: 482px;
+}
+
+.proj-slider-nav {
+    font-family: var(--font-family-second);
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.proj-slider-nav-item {
+    margin-right: 60px;
+    text-transform: uppercase;
+}
+
+.proj-slider-nav-item a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .3);
+    padding-bottom: 10px;
+}
+
+.proj-slider-nav-item a.selected {
+    color: var(--color-theme);
+    border: 0;
+    border-bottom: 2px solid var(--color-theme);
+}
+
+.proj-slider-nav-item a:hover {
+    color: var(--color-theme);
+}
 
