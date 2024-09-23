@@ -95,8 +95,7 @@ body {
 }
 
 .hero {
-    background-image: url('../images/image_4_3.jpg');
-    background-size: auto;
+    background: url('../images/image_4_3.jpg') center/cover no-repeat;
     height: 707px;
     padding-top: 194px;
     position: relative;
@@ -154,13 +153,13 @@ body {
 }
 
 .proj-container {
-    margin-left: 134px;
     background-color: black;
     color: white;
     padding: 107px 0 414px 0;
 
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     gap: 50px;
 }
 
