@@ -85,6 +85,7 @@ body {
     font-style: italic;
     font-size: 11px;
     color: white;
+    cursor: pointer;
 }
 
 .button.transparent {
@@ -284,6 +285,9 @@ body {
 }
 
 .online-pict {
+    width: 114px;
+    height: 28px;
+    background: url('../images/online_control.svg') center/cover no-repeat;
     margin-bottom: 30px;
 }
 
@@ -378,10 +382,6 @@ input:-webkit-autofill:focus {
 	z-index: -1;
 }
 
-/* .real-checkbox:focus + .custom-checkbox {
-	box-shadow: 0px 0px 0px 1px #38577a, 0px 0px 10px #7e9bbd;
-} */
-
 .custom-checkbox {
     position: relative;
     display: inline-block;
@@ -412,4 +412,82 @@ input:-webkit-autofill:focus {
 
 .real-checkbox:checked + .custom-checkbox::before {
 	transform: translate(-50%, -50%) scale(1);
+}
+
+
+.types {
+    margin-top: 76px;
+}
+
+.types-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-title {
+    font-family: var(--font-family-second);
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.types-pict {
+    width: 114px;
+    height: 28px;
+    background: url('../images/types.svg') center/cover no-repeat;
+    margin-bottom: 30px;
+}
+
+.types-wrap {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 30px;
+}
+
+.types-item {
+    width: 392px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-item-image {
+    width: 392px;
+    /* height: 421px; */
+}
+
+.types-item-detail {
+    width: 330px;
+    margin-top: -130px;
+    background-color: white;
+}
+
+.types-item-detail-title {
+    font-family: var(--font-family-second);
+    font-size: 18px;
+    margin: 25px 0 13px 31px;
+}
+
+.types-item-detail-list {
+    font-family: var(--font-family-main);
+    font-size: 13px;
+    color: #959595;
+    margin: 0 0 20px 45px;
+}
+
+.types-item-detail-list li {
+    margin: 0 0 13px;
+}
+
+.types-item-button {
+    height: 54px;
+    width: 228px;
+    padding: 0;
+    font-family: var(--font-family-second);
+    font-style: normal;
+    font-size: 18px;
 }
