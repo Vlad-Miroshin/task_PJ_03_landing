@@ -58,17 +58,17 @@ body {
     display: flex;
 }
 
-.header-nav__item {
+.header-nav-item {
     margin-right: 47px;
     text-transform: uppercase;
 }
 
-.header-nav__item a {
+.header-nav-item a {
     text-decoration: none;
     color: white;
 }
 
-.header-nav__item a:hover {
+.header-nav-item a:hover {
     color: var(--color-theme);
 }
 
@@ -83,7 +83,7 @@ body {
     text-transform: uppercase;
     font-family: var(--font-family-main);
     font-style: italic;
-    font-size: 11px;
+    font-size: 13px;
     color: white;
     cursor: pointer;
 }
@@ -302,7 +302,8 @@ body {
 .online-button-play {
     width: 85px;
     height: 85px;
-    background: url('../images/play.svg') center/28px 28px no-repeat;
+    background: url('../images/play.svg') center/28px no-repeat;
+    background-position: 60% 50%;
     background-color: var(--color-theme);
     border-radius: 50%;
     z-index: 1;
@@ -443,7 +444,7 @@ input:-webkit-autofill:focus {
 .types-wrap {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
     gap: 30px;
 }
 
@@ -489,4 +490,166 @@ input:-webkit-autofill:focus {
     font-family: var(--font-family-second);
     font-style: normal;
     font-size: 18px;
+}
+
+
+.measure {
+    margin-top: 124px;
+}
+
+.measure-container {
+    max-width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-end; */
+}
+
+.measure-pict {
+    width: 1006px;
+    height: 645px;
+    margin-left: -300px;
+    background: url('../images/image_6_1.jpg') center/auto no-repeat;
+}
+
+.measure-items-wrap {
+    margin: 117px 0 0 390px;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+}
+
+.measure-item {
+    display: flex;
+    align-items: center;
+}
+
+.measure-item-back {
+    display: flex;
+    width: 58px;
+    height: 58px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.measure-item-num {
+    width: 42px;
+    height: 42px;
+    margin: auto;
+    border-radius: 50%;
+    font-family: var(--font-family-second);
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    background-color: var(--color-theme);
+    color: white;
+}
+
+.measure-item-text {
+    margin-left: 8px;
+    font-family: var(--font-family-main);
+    font-size: 14px;
+}
+
+.measure-form-wrap {
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+}
+
+.measure-form {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.measure-form-title {
+    margin-top: 28px;
+    font-family: var(--font-family-main);
+    font-size: 18px;
+    line-height: 143%;
+    color: white;
+    text-align: center;
+}
+
+.measure-form-sub {
+    display: flex;
+    align-items: center;
+    margin: 38px 0 0 32px;
+}
+
+.measure-form-sub-pic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 72px;
+    background-color: var(--color-theme);
+    border-radius: 50%;
+}
+
+.piggy_bank {
+    width: 40px;
+    height: 33px;
+    background: url('../images/piggy_bank.svg') center/cover no-repeat;
+}
+
+.measure-form-sub-text {
+    margin-left: 25px;
+    font-family: var(--font-family-main);
+    font-size: 18px;
+    line-height: 143%;
+    color: var(--color-theme);
+}
+
+.measure-submit {
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    margin: 39px auto 18px auto;
+    gap: 28px;
+}
+
+.measure-submit-input {
+    position: relative;
+}
+
+.measure-submit-input input {
+    width: 408px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    background: transparent;
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    color: white;
+}
+
+.measure-submit-input input::placeholder {
+    color: white;
+}
+
+.measure-submit-input label {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--font-family-main);
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.measure-submit-button {
+    height: 50px;
+    width: 213px;
+    font-style: normal;
+    align-self: flex-end;
+}
+
+.measure-checkbox-label {
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    color: white;
 }
