@@ -852,3 +852,85 @@ input:-webkit-autofill:focus {
 }
 
 
+
+.question {
+    margin-top: 132px;
+}
+
+.question-form {
+    width: 883px;
+    height: 445px;
+    margin: 0 auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-form-title {
+    font-family: var(--font-family-second);
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 34px;
+    margin-bottom: 45px;
+}
+
+.question-input-wrap {
+    margin-bottom: 46px;
+}
+
+.question-input-line {
+    display: flex;
+    flex-direction:  row;
+    gap: 58px;
+    margin-bottom: 48px;
+}
+
+.question-input {
+    position: relative;
+}
+
+.question-input input {
+    width: 231px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: transparent;
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    color: white;
+}
+
+.question-input.long input {
+    width: 520px;
+}
+
+.question-input input::placeholder {
+    color: white;
+}
+
+.question-input label {
+    position: absolute;
+    top: -22px;
+    left: 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--font-family-main);
+    font-size: 13px;
+    padding: 10px 0;
+}
+
+.question-button {
+    width: 200px;
+    height: 50px;
+    font-style: normal;
+    margin-top: 50px;
+}
+
+.question-checkbox-label {
+    font-family: var(--font-family-main);
+    font-size: 14px;
+    color: white;
+}
