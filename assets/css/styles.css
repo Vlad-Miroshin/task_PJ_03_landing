@@ -27,7 +27,7 @@ body {
 } */
 
 .container {
-    max-width: 1250px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -660,3 +660,76 @@ input:-webkit-autofill:focus {
     font-size: 14px;
     color: white;
 }
+
+
+.styles {
+    margin-top: 130px;
+}
+
+.styles-container {
+    height: 864px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('../images/styles_back.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+.styles-nav {
+    margin: 137px 0 0 100px;
+}
+
+.styles-nav-title {
+    font-family: var(--font-family-second);
+    font-size: 27px;
+    color: var(--color-theme);
+    text-transform: uppercase;
+}
+
+.styles-nav-list {
+    margin-top: 47px;
+    list-style: none;
+    font-family: var(--font-family-main);
+    font-size: 20px;
+}
+
+.styles-nav-list li {
+    margin-bottom: 25px;
+}
+
+.styles-nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 2px;
+}
+
+.styles-nav-list li a.selected {
+    color: var(--color-theme);
+    border: 0;
+    border-bottom: 1px solid var(--color-theme);
+}
+
+.styles-nav-list li a:hover {
+    color: var(--color-theme);
+}
+
+.styles-img-group {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.styles-img-group img {
+    width: 354px;
+}
+
+.styles-img-group-1 {
+    position: absolute;
+    margin-left: 587px;
+    margin-top: -40px;
+}
+
+.styles-img-group-2 {
+    position: absolute;
+    margin-left: 984px;
+    margin-top: -112px;
+}
+ 
