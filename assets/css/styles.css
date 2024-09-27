@@ -8,6 +8,8 @@
     --font-size-main: 11px;
 
     --color-theme: #E3B873;
+
+    --mobile-width: 375px;
 }
 
 * {
@@ -102,7 +104,7 @@ input:-webkit-autofill:focus {
 @media screen and (max-width: 1300px) 
 {
     .container {
-        max-width: 375px;
+        max-width: var(--mobile-width);
     }
 
     .button {
@@ -231,7 +233,7 @@ input:-webkit-autofill:focus {
 @media screen and (max-width: 1300px) 
 {
     .hero {
-        max-width: 375px;
+        max-width: var(--mobile-width);
         height: 476px;
         padding-top: 85px;
     }
@@ -420,7 +422,7 @@ input:-webkit-autofill:focus {
 @media screen and (max-width: 1300px) 
 {
     .proj {
-        max-width: 375px;
+        max-width: var(--mobile-width);
         height: 690px;
         padding-top: 35px;
     }
@@ -432,7 +434,7 @@ input:-webkit-autofill:focus {
     }
 
     .proj-descr {
-        max-width: 375px;
+        max-width: var(--mobile-width);
     }
 
     .proj-header {
@@ -579,7 +581,7 @@ input:-webkit-autofill:focus {
 @media screen and (max-width: 1300px) 
 {
     .online {
-        max-width: 375px;
+        max-width: var(--mobile-width);
         height: 860px;
         margin-top: 0;
         background-color: black;
@@ -652,8 +654,6 @@ input:-webkit-autofill:focus {
         font-size: 13px;
         margin-bottom: 33px;
     }
-        
-        
     
 }
 
@@ -738,6 +738,62 @@ input:-webkit-autofill:focus {
     font-size: 18px;
 }
 
+@media screen and (max-width: 1300px) 
+{
+    .types {
+        max-width: var(--mobile-width);
+        margin: 0 auto;
+    }
+
+    .types-container {
+        margin: 60px 18px 0 18px;
+    }
+
+    .types-title {
+        font-size: 22px;
+    }
+    
+    .types-wrap {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .types-item {
+        width: 392px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .types-item-image {
+        width: var(--mobile-width);
+    }
+
+    .types-item-detail {
+        width: 270px;
+        margin-top: -160px;
+        background-color: white;
+    }    
+
+    .types-item-detail-title {
+        font-size: 15px;
+    }
+    
+    .types-item-detail-list {
+        font-size: 13px;
+    }
+    
+    .types-item-button {
+        height: 40px;
+        width: 190px;
+        font-size: 15px;
+    }
+    
+
+}
+
+
+/* measure */
 
 .measure {
     margin-top: 124px;
@@ -906,6 +962,14 @@ input:-webkit-autofill:focus {
     font-size: 14px;
     color: white;
 }
+
+@media screen and (max-width: 1300px) 
+{
+    .measure {
+        display: none;
+    }
+}
+
 
 
 /* styles */
