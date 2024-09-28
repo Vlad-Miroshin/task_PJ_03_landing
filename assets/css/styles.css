@@ -1409,10 +1409,17 @@ input:-webkit-autofill:focus {
     align-items: center;
 }
 
+.contact-title-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact-title {
     font-family: var(--font-family-second);
     font-size: 27px;
     line-height: 138%;
+    max-width: 590px;
     color: var(--color-theme);
     text-transform: uppercase;
     text-align: center;
@@ -1449,11 +1456,45 @@ input:-webkit-autofill:focus {
 
 .contact-map {
     width: 925px;
-    height: 465px;
-    background: url('../images/contact_map.jpg') center/cover no-repeat;
     margin-top: 44px;
 }
 
+@media screen and (max-width: 1300px) 
+{
+    .contact {
+        max-width: var(--mobile-width);
+        margin-top: 0;
+        background-color: black;
+        margin: 0 auto;
+    }
+
+    .contact-container {
+        height: 400px;
+        background: none;
+        flex-direction: column-reverse;
+        margin: 0 18px 0 18px;
+    }
+
+    .contact-title {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    
+    .contact-title-wrap {
+        margin-bottom: 50px;
+    }
+
+    .contact-map {
+        width: 340px;
+        margin-top: 0;
+    }
+    
+    .contact-map-image {
+        width: 340px;
+    }
+}
+
+/* footer */
 
 .footer-content {
     background-color: black;
